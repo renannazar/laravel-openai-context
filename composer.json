@@ -1,0 +1,32 @@
+{
+    "name": "renannazar/laravel-openai-context",
+    "version": "1.0.0",
+    "description": "Laravel using openai for context question",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Renannazar\\LaravelOpenaiContext\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Renan Nazar",
+            "email": "renan.nazar123@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Renannazar\\LaravelOpenaiContext\\OpenaiContextServiceProvider"
+            ],
+            "aliases": {
+                "OpenaiContext": "Renannazar\\LaravelOpenaiContext\\Facades\\OpenaiContext"
+            }
+        }
+    },
+    "require": {
+        "openai-php/laravel": "^0.7.0"
+    }
+}
